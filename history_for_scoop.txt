@@ -1,0 +1,48 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  add-apt-repository -y ppa:webupd8team/java
+    4  sudo add-apt-repository -y ppa:webupd8team/java
+    5  sudo apt update
+    6  sudo apt install -y oracle-java8-installer
+    7  java -version
+    8  sudo nano /etc/profile
+    9  source /etc/profile
+   10  sudo nano /etc/sysctl.conf
+   11  sudo addgroup hadoopgroup
+   12  sudo  adduser -ingroup hadoopgroup hadoopuser
+   13  sudo apt install ssh
+   14  sudo systemctl enable ssh
+   15  sudo systemctl start ssh
+   16  su - hadoopuser
+   17  java –version
+   18  sudo java –version
+   19  sudo nano mapred-site.xml.template
+   20  sudo mapred-site.xml.template
+   21  sudo nano mapred-site.xml.template
+   22  cd /usr/local/hadoop/etc/hadoop
+   23  sudo nano mapred-site.xml.template
+   24  cd
+   25  su hadoopuser
+   26  sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+   27  cd /usr/local/hadoop/etc/hadoop
+   28  sudo nano core-site.xml
+   29  sudo nano hdfs-site.xml
+   30  sudo nano mapred-site.xml.template
+   31  sudo nano yarn-site.xml
+   32  su - hadoopuser
+   33  sudo wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-2.8.5/hadoop-2.8.5.tar.gz
+   34  sudo tar xzf hadoop-2.8.5.tar.gz
+   35  sudo mv hadoop-2.8.5 /usr/local
+   36  sudo ln -sf /usr/local/hadoop-2.8.5/ /usr/local/hadoop
+   37  sudo chown -R hadoopuser:hadoopgroup /usr/local/hadoop-2.8.5/
+   38  su - hadoopuser
+   39  cd /usr/local/hadoop/etc/hadoop
+   40  sudo nano mapred-site.xml.template
+   41  cd
+   42  su - hadoopuser
+   43  cd /usr/local/hadoop/etc/hadoop
+   44  nano mapred-site.xml
+   45  sudo nano mapred-site.xml.template
+   46  su - hadoopuser
+   47  cd
+   48  history > history_for_scoop.txt
